@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0b17">
+<title>Trade King — ফ্রি ট্রেডিং কমিউনিটি</title>
+<meta name="description" content="Trade King-এর ফ্রি Telegram কমিউনিটিতে যোগ দিন—মার্কেট আপডেট, ট্রেডিং আইডিয়া ও শেখার গাইড এক জায়গায়।">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%237c3aed'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='white'%3E♛%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#0b0b17;--card:#14142a;--line:#272750;--text:#f1f1ff;--muted:#a9a9cf;--v:#7c3aed;--v2:#a78bfa;--c:#22d3ee;--tg:#229ed9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Hind Siliguri","Noto Sans Bengali","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;padding-bottom:84px;
+background-image:radial-gradient(650px 320px at 90% -5%,rgba(124,58,237,.3),transparent),radial-gradient(500px 300px at -5% 30%,rgba(34,211,238,.12),transparent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{padding:18px 0}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px}
+.logo i{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--v),var(--c));display:grid;place-items:center;font-style:normal;font-size:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--v),#5b21b6);color:#fff;font-weight:700;text-decoration:none;padding:16px 30px;border-radius:50px;font-size:17px;box-shadow:0 10px 30px rgba(124,58,237,.45);transition:.2s;border:1px solid rgba(255,255,255,.15)}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:22px;height:22px;fill:currentColor}
+.btn.sm{padding:9px 18px;font-size:14px;box-shadow:none}
+.hero{text-align:center;padding:50px 0 50px;max-width:760px;margin:0 auto}
+.tag{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--c);padding:6px 16px;border-radius:99px;font-size:13px;margin-bottom:20px}
+.dot{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.7);animation:p 1.8s infinite}
+@keyframes p{70%{box-shadow:0 0 0 9px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+h1{font-size:clamp(34px,7vw,60px);line-height:1.18;margin-bottom:18px}
+h1 span{background:linear-gradient(90deg,var(--v2),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:18px;margin:0 auto 28px;max-width:560px}
+.note{display:block;margin-top:14px;color:var(--muted);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:64px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:9px 18px;font-size:14px;color:var(--muted)}
+.chip b{color:var(--text)}
+.sec-h{text-align:center;margin-bottom:32px}
+.sec-h small{color:var(--c);letter-spacing:1px;font-size:13px}
+.sec-h h2{font-size:clamp(26px,4.5vw,38px);margin-top:6px}
+.sec-h p{color:var(--muted);margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:70px}
+.fc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;gap:16px;transition:.2s}
+.fc:hover{border-color:var(--v2);transform:translateY(-3px)}
+.fc .ic{flex:none;width:52px;height:52px;border-radius:14px;background:rgba(124,58,237,.18);display:grid;place-items:center;font-size:26px}
+.fc h3{font-size:19px;margin-bottom:4px}
+.fc p{color:var(--muted);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:70px}
+.step{text-align:center;padding:24px 16px;background:var(--card);border:1px solid var(--line);border-radius:20px}
+.step em{display:grid;place-items:center;width:46px;height:46px;margin:0 auto 12px;border-radius:50%;background:linear-gradient(135deg,var(--v),var(--c));font-style:normal;font-weight:700;font-size:19px}
+.step h3{font-size:18px;margin-bottom:4px}
+.step p{color:var(--muted);font-size:15px}
+.cta{text-align:center;background:linear-gradient(135deg,#231552,#101030);border:1px solid var(--line);border-radius:28px;padding:48px 22px;margin-bottom:30px}
+.cta h2{font-size:clamp(26px,4.5vw,36px);margin-bottom:10px}
+.cta p{color:var(--muted);margin-bottom:24px}
+.risk{background:rgba(34,211,238,.06);border:1px solid rgba(34,211,238,.3);border-radius:14px;padding:16px 18px;font-size:14px;color:var(--muted);margin-bottom:30px}
+.risk b{color:var(--c)}
+footer{text-align:center;color:var(--muted);font-size:13px;padding-bottom:20px}
+.sticky{display:none}
+@media(max-width:800px){
+.hero{padding-top:26px}
+.grid,.steps{grid-template-columns:1fr}
+.btn.full{width:100%}
+.sticky{display:block;position:fixed;left:0;right:0;bottom:0;padding:12px 16px;background:rgba(11,11,23,.93);backdrop-filter:blur(8px);border-top:1px solid var(--line);z-index:9}
+.sticky .btn{width:100%;padding:14px}
+}
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1511260837492488');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1511260837492488&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="nav">
+      <div class="logo"><i>♛</i>Trade King</div>
+      <a class="btn sm" href="https://t.me/tradeking307" target="_blank" rel="noopener">জয়েন করুন</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <span class="tag"><span class="dot"></span>ফ্রি Telegram কমিউনিটি</span>
+    <h1>মার্কেট বুঝুন <span>আত্মবিশ্বাসের সাথে</span></h1>
+    <p>ট্রেডিং আপডেট, আইডিয়া ও রিস্ক ম্যানেজমেন্টের সহজ গাইড—সব এক জায়গায়, Trade King-এর অফিসিয়াল Telegram চ্যানেলে।</p>
+    <a class="btn full" href="https://t.me/tradeking307" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M9.8 15.6l-.4 4.1c.6 0 .9-.3 1.2-.6l2.9-2.7 6 4.4c1.1.6 1.9.3 2.2-1L24 3.9c.4-1.6-.6-2.3-1.6-1.9L1.3 10.1c-1.5.6-1.5 1.4-.3 1.8l5.4 1.7 12.5-7.9c.6-.4 1.1-.2.7.2z"/></svg>
+      Telegram-এ ফ্রি জয়েন করুন
+    </a>
+    <span class="note">✓ কোনো ফি নেই &nbsp; ✓ এক ক্লিকেই জয়েন</span>
+  </section>
+
+  <div class="chips">
+    <div class="chip"><b>📊</b> মার্কেট আপডেট</div>
+    <div class="chip"><b>💡</b> ট্রেডিং আইডিয়া</div>
+    <div class="chip"><b>🛡️</b> রিস্ক টিপস</div>
+    <div class="chip"><b>📘</b> শেখার নোট</div>
+  </div>
+
+  <section>
+    <div class="sec-h"><small>INSIDE THE CHANNEL</small><h2>চ্যানেলে যা পাবেন</h2><p>নতুন ও অভিজ্ঞ—দুই ধরনের ট্রেডারের জন্যই সহজ কনটেন্ট।</p></div>
+    <div class="grid">
+      <div class="fc"><div class="ic">📊</div><div><h3>মার্কেট আপডেট</h3><p>বাজারের গুরুত্বপূর্ণ মুভমেন্ট ও খবর সহজ বাংলায়।</p></div></div>
+      <div class="fc"><div class="ic">💡</div><div><h3>ট্রেডিং আইডিয়া</h3><p>মার্কেট পরিস্থিতি অনুযায়ী সেটআপ ও প্রয়োজনীয় নির্দেশনা।</p></div></div>
+      <div class="fc"><div class="ic">🛡️</div><div><h3>রিস্ক ম্যানেজমেন্ট</h3><p>ক্যাপিটাল সামলানো ও সাধারণ ভুল এড়ানোর বাস্তব টিপস।</p></div></div>
+      <div class="fc"><div class="ic">📘</div><div><h3>শেখার গাইড</h3><p>ট্রেডিংয়ের বেসিক থেকে ধাপে ধাপে বোঝার মতো নোট।</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-h"><small>HOW TO JOIN</small><h2>৩ ধাপে জয়েন করুন</h2></div>
+    <div class="steps">
+      <div class="step"><em>১</em><h3>বাটনে ক্লিক</h3><p>যেকোনো “জয়েন করুন” বাটনে ট্যাপ করুন।</p></div>
+      <div class="step"><em>২</em><h3>Telegram খুলবে</h3><p>অ্যাপ বা ওয়েবে চ্যানেলটি ওপেন হবে।</p></div>
+      <div class="step"><em>৩</em><h3>Join চাপুন</h3><p>ব্যস, আপডেট পাওয়া শুরু।</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>আজই Trade King কমিউনিটিতে আসুন</h2>
+    <p>এক ক্লিকে অফিসিয়াল Telegram চ্যানেলে যোগ দিন।</p>
+    <a class="btn" href="https://t.me/tradeking307" target="_blank" rel="noopener">এখনই জয়েন করুন →</a>
+  </section>
+
+  <div class="risk"><b>ঝুঁকি সতর্কতা:</b> ট্রেডিংয়ে আর্থিক ক্ষতির ঝুঁকি আছে। কোনো আইডিয়া বা আপডেট লাভের নিশ্চয়তা নয়। নিজে যাচাই করে সিদ্ধান্ত নিন এবং শুধু সেই অর্থ ব্যবহার করুন যা হারালে আপনার সমস্যা হবে না। এটি শুধুমাত্র শিক্ষামূলক তথ্য।</div>
+
+  <footer>© 2026 Trade King. এই পেজ কোনো ব্যক্তিগত বা পেমেন্ট তথ্য সংগ্রহ করে না।</footer>
+</div>
+
+<div class="sticky"><a class="btn" href="https://t.me/tradeking307" target="_blank" rel="noopener">Telegram-এ ফ্রি জয়েন করুন</a></div>
+
+<script>
+document.addEventListener('click',function(e){var a=e.target.closest('a[href*="t.me/"]');if(a&&window.fbq){fbq('track','Lead');}});
+</script>
+</body>
+</html>
